@@ -1,0 +1,84 @@
+
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-style: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#img-logo{
+    width: 8rem;
+}
+
+#img-logo2{
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 8rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+
+.div-topo{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.input-pesquisar input{
+    width: 40rem;
+    height: 2.5rem;
+    border-radius: .2rem 0rem 0rem .2rem;
+}
+
+.button-send{
+  height: 2.5rem;
+  background-color: #38B6F9;
+  border-radius: 0rem .2rem .2rem 0rem;
+  padding: .5rem;
+}
+
+.div-user{
+  display: flex;
+  gap: 1rem;
+}
+
+.div-user li a {
+  color: rgb(167, 167, 167);
+  text-decoration: none;
+}
+
+.div-user li a:hover {
+  color: #38B6F9;
+}
+
+.ul-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  height: 2rem;
+}
+
+.ul-nav li a{
+  text-decoration: none;
+  color: rgb(167, 167, 167);
+  font-weight: 500;
+}
+
+.ul-nav li a:hover{
+  color: #38B6F9;
+}
