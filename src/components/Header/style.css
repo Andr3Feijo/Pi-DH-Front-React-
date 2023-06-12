@@ -1,4 +1,3 @@
-
 *{
     list-style: none;
     text-decoration: none;
@@ -39,6 +38,10 @@
     margin-left: 1rem;
 }
 
+.input-pesquisar{
+  display: flex;
+}
+
 .input-pesquisar input{
     width: 40rem;
     height: 2.5rem;
@@ -50,6 +53,10 @@
   background-color: #38B6F9;
   border-radius: 0rem .2rem .2rem 0rem;
   padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .6rem;
 }
 
 .div-user{
@@ -82,3 +89,32 @@
 .ul-nav li a:hover{
   color: #38B6F9;
 }
+
+
+@media screen and (max-width: 1000px){
+  .div-topo{
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    justify-content: space-around;
+
+  }
+  .input-pesquisar input{
+    width: 20rem;
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+  .div-user{
+    font-size: .7rem;
+  }
+  .input-pesquisar input{
+    width: 8rem;
+  }
+  .button-send {
+    width: 2rem;
+  }
+  #img-logo{
+    width: 6rem;
+  }
+} 

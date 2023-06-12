@@ -1,21 +1,15 @@
-import React from "react"
-import style from './style.css'
+import React from 'react';
+import ImgLogo from "../../images/I-SPACE logo oficial.jpg"
+import './style.css'
 
 const Header = () => {
-  
- document.addEventListener('click',function(e){
-  // Hamburger menu
-  if(e.target.classNameList.contains('hamburger-toggle')){
-    e.target.children[0].classNameList.toggle('active');
-  }
-})   
   return (
-   <>
-      <header className="header ">
+    <>
+    <header className="header texto_garamond">
       <div className="div-topo">
-        <div className="">
+        <div className="logoHeader">
           <a href="/">
-            <img src="/images/I-SPACE logo oficial.jpg" alt="" id="img-logo"/>
+            <img src={ImgLogo} alt="" id="img-logo"/>
 
           </a>
           
@@ -31,7 +25,7 @@ const Header = () => {
       </form>
       <div className="div-user">
       <li className="">
-        <a className="" href="users/create">Cadastro</a>
+        <a className="" href="/cadastro">Cadastro</a>
       </li>
       <li className="">
         <a className="" href="../login">Login</a>
@@ -59,28 +53,16 @@ const Header = () => {
                   <a className=""  href="/productPage/watch">Watch</a>
                 </li>
                 <li className="">
-                  <a className=""  href="/sobre">Sobre</a>
-                </li>
-                <li className="">
-                  <a className=""  href="/">Serviços</a>
-                </li> 
-                <li className="">
                   <a className=""  href="/estoque">Estoque</a>
                 </li>
               </ul>  
         </nav>
-
+  
    </header>
-   </>
-  )
-}
+   
 
+    </>
+  );
+};
 
-
-
-
-
-
-
-
-export default Header
+export default Header;
